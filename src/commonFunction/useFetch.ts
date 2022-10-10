@@ -3,10 +3,7 @@ import useSWR from "swr";
 
 
 const useFetch = <T>(url: string) => {
-    const config = {
-        'X-API-KEY': process.env.REACT_APP_RESAS_KEY
-    }
-    const fetcher = (url: string): Promise<T> => {
+    const fetcher = async (url: string): Promise<T> => {
         return axios
             .get(url, {
                 headers: {
