@@ -12,7 +12,7 @@
         ],
         "jsxImportSource": "@emotion/react",
         "paths": {
-            "@/*": ["src/*"]
+            "@/*": ["./src/*"]
         },
         "esModuleInterop": true
     }
